@@ -9,20 +9,13 @@
 
 <body>
 
-    <script src="./app.js"></script>
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '66350100af4386adfca19081' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Test-AI"
+  agent-id="0d9dd2b6-8aaa-4a29-8b41-aaa92c2aebbd"
+  language-code="en"
+></df-messenger>
 </body>
 
 </html>
